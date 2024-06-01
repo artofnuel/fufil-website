@@ -7,7 +7,10 @@ const Services = () => {
   return (
     <main className="w-full h-auto py-10">
       {servicesData.map((item, index) => (
-        <div className="w-full h-auto md:h-[600px] p-5 md:p-0 odd:bg-primary even:bg-white odd:tex-white even:text-primary flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-center items-center gap-10">
+        <div
+          key={index}
+          className="w-full h-auto md:h-[600px] p-5 md:p-0 odd:bg-primary even:bg-white odd:tex-white even:text-primary flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-center items-center gap-10"
+        >
           <div className="w-full md:w-1/2 h-full overflow-hidden">
             <Image
               src={item.image}
@@ -28,7 +31,9 @@ const Services = () => {
               </p>
               <ul className="w-full grid grid-cols-2 gap-1 list-disc list-inside">
                 {item.list.map((list, index) => (
-                  <li className="py-2">{list}</li>
+                  <li key={index} className="py-2">
+                    {list}
+                  </li>
                 ))}
               </ul>
               <button className="bg-white my-4 p-2 px-10 rounded-full text-primary font-semibold border-2 border-primary">
