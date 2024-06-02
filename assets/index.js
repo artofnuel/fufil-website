@@ -4,6 +4,12 @@ export const images = {
   image3: require("../assets/image3.jpg"),
 };
 
+export const offerImages = [
+  { image: images.image2 },
+  { image: images.image1 },
+  { image: images.image3 },
+];
+
 export const servicesData = [
   {
     title: "Haulage",

@@ -9,7 +9,7 @@ const Services = () => {
       {servicesData.map((item, index) => (
         <div
           key={index}
-          className="w-full h-auto md:h-[600px] p-5 md:p-0 odd:bg-primary even:bg-white odd:tex-white even:text-primary flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-center items-center gap-10"
+          className="w-full h-auto md:h-[600px] p-5 md:p-0 odd:bg-primary even:bg-white odd:tex-white even:text-copy flex flex-col md:odd:flex-row md:even:flex-row-reverse justify-center items-center gap-10"
         >
           <div className="w-full md:w-1/2 h-full overflow-hidden">
             <Image
@@ -36,7 +36,7 @@ const Services = () => {
                   </li>
                 ))}
               </ul>
-              <button className="bg-white my-4 p-2 px-10 rounded-full text-primary font-semibold border-2 border-primary">
+              <button className="bg-white my-4 p-2 px-10 rounded-full text-copy font-semibold border-2 border-copy">
                 Explore
               </button>
             </div>
